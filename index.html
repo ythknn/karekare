@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kare Kare — haftanın her saati</title>
+<meta name="description" content="Haftanın 168 saati, saat başına bir kare. Geçen saati boya, haftanın gerçekte nereye gittiğini gör. Hesap yok, sunucu yok, ücretsiz.">
+<style>
+  :root { color-scheme: light dark; --fg: #1c1c1e; --muted: #6e6e73; --bg: #ffffff; --card: #f2f2f7; --accent: #b8860b; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #f2f2f7; --muted: #a1a1a6; --bg: #0f1014; --card: #1c1d22; --accent: #f5c451; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 960px; margin: 0 auto; padding: 48px 16px 72px; }
+  .hero { text-align: center; max-width: 640px; margin: 0 auto 40px; }
+  .board { display: grid; grid-template-columns: repeat(12, 1fr); gap: 4px; max-width: 300px; margin: 0 auto 28px; }
+  .board span { aspect-ratio: 1; border-radius: 4px; }
+  h1 { font-size: clamp(32px, 6vw, 48px); line-height: 1.1; margin: 0 0 14px; letter-spacing: -0.02em; }
+  h1 em { color: var(--accent); font-style: italic; }
+  h2 { font-size: 24px; margin: 48px 0 12px; }
+  p { margin: 0 0 12px; } .muted { color: var(--muted); }
+  .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
+  .shots img { width: 100%; height: auto; border-radius: 22px; background: var(--card); }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .features div { background: var(--card); border-radius: 18px; padding: 18px; }
+  .features b { display: block; margin-bottom: 4px; }
+  a { color: var(--accent); }
+  footer { margin-top: 56px; text-align: center; font-size: 15px; }
+  hr { border: 0; border-top: 1px solid #8884; margin: 56px 0; }
+  @media (max-width: 560px) { .shots { grid-template-columns: 1fr 1fr; } .shots img:nth-child(3) { display: none; } }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div class="board" aria-hidden="true">
+      <span style="background:#4A5BA8"></span><span style="background:#4A5BA8"></span><span style="background:#4A5BA8"></span><span style="background:#4A5BA8"></span><span style="background:#4A5BA8"></span><span style="background:#4A5BA8"></span><span style="background:#4A5BA8"></span><span style="background:#C93C55"></span><span style="background:#B8A27A"></span><span style="background:#2E7D6B"></span><span style="background:#2E7D6B"></span><span style="background:#2E7D6B"></span>
+      <span style="background:#E07A3F"></span><span style="background:#2E7D6B"></span><span style="background:#2E7D6B"></span><span style="background:#8884"></span><span style="background:#2E7D6B"></span><span style="background:#B8A27A"></span><span style="background:#E07A3F"></span><span style="background:#4A90C2"></span><span style="background:#E8A6B8"></span><span style="background:#8C6A4A"></span><span style="background:#6C7A89"></span><span style="background:#4A5BA8"></span>
+    </div>
+    <h1>Bir hafta 168 saat. <em>Her biri</em> bir kare.</h1>
+    <p class="muted">Plan yapmak yerine, bir saat geçtiğinde onu boya. Pazar gecesi pano, haftanın gerçekte nereye gittiğinin resmi olur. Hesap yok, sunucu yok, reklam yok; tüm özellikleriyle ücretsiz.</p>
+    <p class="muted">iPhone için, iOS 17 ve sonrası. Yakında App Store'da.</p>
+  </section>
+
+  <div class="shots">
+    <img src="screenshots/tr-1-week.png" alt="Haftanın 168 saati tek ekranda, amaç renkleriyle boyanmış pano" width="600" height="1304">
+    <img src="screenshots/tr-4-insights.png" alt="İçgörüler: kaydedilen saatler, gecelik uyku, bilinmeyen saatler ve görevler" width="600" height="1304">
+    <img src="screenshots/tr-5-targets.png" alt="Haftalık hedefler ve 8 haftalık ritim ısı haritası" width="600" height="1304">
+  </div>
+
+  <div class="features">
+    <div><b>Pano</b>Haftanın her saati tek ekranda. Bir amaca dokun ya da parmağını sürükleyerek boya.</div>
+    <div><b>Gün ve saat</b>Not, sesli not, yan görevler, alışkanlıklar, her hafta çalan saat sesleri ve kurallar.</div>
+    <div><b>Hedefler ve ritim</b>"En az 56 sa uyku", "en çok 14 sa ekran"; son 8 haftada saatlerinin ritmi.</div>
+    <div><b>Widget</b>Ana ekranda bugün ya da bütün hafta, kilit ekranında bilinmeyen saatlerin.</div>
+    <div><b>JustDump ile</b>JustDump'a söylediğin saati belli görevler, Kare Kare'de saatine düşer.</div>
+    <div><b>Senin kalır</b>Her şey iPhone'unda tek bir dosya. Hiçbir sunucuya gitmez.</div>
+  </div>
+
+  <hr>
+
+  <section lang="en">
+    <h2>A week is 168 hours. Each one is a square.</h2>
+    <p class="muted">Instead of planning, colour an hour in once it has passed. By Sunday night the board is a picture of where your week actually went. No account, no server, no ads — free, with every feature included. For iPhone, iOS 17 and later. Coming soon to the App Store.</p>
+    <div class="features">
+      <div><b>The board</b>Every hour of the week on one screen. Tap a purpose, or drag to paint.</div>
+      <div><b>Days and hours</b>Notes, voice notes, side tasks, habits, weekly hour sounds and rules.</div>
+      <div><b>Targets and rhythm</b>"At least 56 h of sleep", "at most 14 h of scrolling"; your hours' rhythm over 8 weeks.</div>
+      <div><b>Widgets</b>Today or the whole week on the Home Screen, unknown hours on the Lock Screen.</div>
+      <div><b>With JustDump</b>Timed tasks you tell JustDump land in their hours in Kare Kare.</div>
+      <div><b>Yours to keep</b>Everything is one file on your iPhone. It never goes to a server.</div>
+    </div>
+  </section>
+
+  <footer class="muted">
+    <a href="privacy/">Gizlilik / Privacy</a> · <a href="support/">Destek / Support</a> · <a href="mailto:tarik@vo1d.studio">tarik@vo1d.studio</a>
+    <p style="margin-top:10px">© 2026 Tarik Hakan</p>
+  </footer>
+</main>
+</body>
+</html>
